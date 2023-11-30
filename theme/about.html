@@ -72,7 +72,7 @@
     <div class="container">
       <div class="logo-area">
           <div class="row align-items-center">
-            <div class="logo col-lg-3 text-center text-lg-left mb-3 mb-md-5 mb-lg-0">
+            <div class="logo col-lg-3 text-center text-lg-left">
                 <a class="d-block" href="index.html" style="width: 350px;">
                   <img loading="lazy" src="images/logo.png" alt="Inmotech">
                 </a>
@@ -101,7 +101,7 @@
                     <a class="btn btn-primary" href="contact.html">Pide presupuesto</a>
                   </li>
                 </ul><!-- Ul end -->
-            </div><!-- header right end -->
+            </div>
           </div><!-- logo area end -->
   
       </div><!-- Row end -->
@@ -116,7 +116,13 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                
+                <div class="top-social" >
+                  <ul id="infoBoxMenu" >
+                    <li class="header-get-a-quote" style="margin-top: -5px;">
+                      <a class="btn btn-primary" href="contact.html">Contacto</a>
+                    </li>
+                  </ul>
+                </div>
                 <div id="navbar-collapse" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav mr-auto">
                       <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
@@ -133,18 +139,20 @@
                       <li class="nav-item dropdown">
                           <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Proyectos <i class="fa fa-angle-down"></i></a>
                           <ul class="dropdown-menu" role="menu">
-                            <li><a href="projects.html">Construcción y obra nueva</a></li>
-                            <li><a href="projects.html">Reformas y rehabilitación</a></li>
-                            <li><a href="projects-single.html">Obra pública</a></li>
-                            <li><a >Otros</a></li>
+                            <li><a href="projects.html?projecttype=obranueva">Construcción y obra nueva</a></li>
+                            <li><a href="projects.html?projecttype=rehabilitacion">Reformas y rehabilitación</a></li>
+                            <li><a href="projects.html?projecttype=interiores">Interiores</a></li>
+                            <li><a href="projects.html?projecttype=obrapublica">Obra pública</a></li>
+                            <li><a href="projects.html?projecttype=otros">Otros</a></li>
                           </ul>
                       </li>
               
                       <li class="nav-item dropdown">
                           <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Servicios <i class="fa fa-angle-down"></i></a>
                           <ul class="dropdown-menu" role="menu">
-                            <li><a href="services.html">Tramitación de subvenciones</a></li>
-                            <li><a href="services.html">Arquitectos y aparejadores</a></li>
+                            <li><a href="service-single.html">Construcción y reformas</a></li>
+                            <li><a href="service-single.html">Diseñamos tu proyecto</a></li>
+                            <li><a href="service-single.html">Tramitación de subvenciones</a></li>
                             <li><a href="service-single.html">Ahorro energético</a></li>
                           </ul>
                       </li>
@@ -170,7 +178,7 @@
                         <ul class="dropdown-menu" role="menu">
                           <li><a href="about.html">La empresa</a></li>
                           <!-- <li><a href="team.html">Profesionales</a></li> -->
-                          <li><a href="testimonials.html">Trabaja con nosotros</a></li>
+                          <li><a href="workwithus.html">Trabaja con nosotros</a></li>
                         </ul>
                     </li>
               
@@ -186,8 +194,8 @@
                       <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
                     </ul>
                 </div>
-
-                <div class="col-lg-4 col-md-4 top-social text-center text-md-right" style="width: 190px;">
+                
+                <!-- <div class="col-lg-4 col-md-4 top-social text-center text-md-right" style="width: 190px;">
                   <ul class="list-unstyled">
                       <li>
                         <a title="Facebook" href="https://facebbok.com/themefisher.com">
@@ -204,7 +212,7 @@
                         </a>
                       </li>
                   </ul>
-                </div>
+                </div> -->
               </nav>
           </div>
           <!--/ Col end -->
@@ -246,10 +254,16 @@
   <div class="container">
     <div class="row">
         <div class="col-lg-6">
-          <h3 class="column-title">Who We Are</h3>
-          <p>when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.</p>
+          <h3 class="column-title">Quiénes somos</h3>
+          <p>Inmotech es una empresa de construcción y reformas fundada en Madrid hace 25 años. Ubicados en Navia desde 2018 comenzamos nuestra actividad en el Occidente de Asturias y Lugo desempeñando trabajos de construcción y reformas en estrecha colaboración con profesionales de la zona.
+            Constructores, arquitectos y proveedores locales junto a nuestra amplia infrastuctura y recursos, nos permite ejecutar los proyectos de nuestros clientes a la mayor brevedad sumando un amplio equipo de profesionales y experiencia de nuestros colaboradores, tanto en obra nueva como en reformas de fincas rústicas siguiendo dos valores fundamentales:
+            
+            
+          </p>
           <blockquote><p>Semporibus autem quibusdam et aut officiis debitis aut rerum est aut optio cumque nihil necessitatibus autemn ec tincidunt nunc posuere ut</p></blockquote>
-          <p>He lay on his armour-like  back, and if he lifted. ultrices ultrices sapien, nec tincidunt nunc posuere ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn’t anything embarrassing.</p>
+          
+          <p>Máximo respeto por el entorno cuidando el impacto visual, el tratamiento de escombros y residuos.</p>
+          <p> Máximo respeto por las construcciones tradicionales. Nuestro objetivo es recuperar y lucir las técnicas constructivas tradicionales y dar una segunda vida al valioso patromonio que suponen las construcciones tradicionales de la zona.</p>
 
         </div><!-- Col end -->
 
@@ -261,7 +275,7 @@
                 <div class="container">
                     <div class="box-slider-content">
                       <div class="box-slider-text">
-                          <h2 class="box-slide-title">Leadership</h2>
+                          <h2 class="box-slide-title">Experiencia</h2>
                       </div>    
                     </div>
                 </div>
@@ -271,7 +285,7 @@
                 <div class="container">
                     <div class="box-slider-content">
                       <div class="box-slider-text">
-                          <h2 class="box-slide-title">Relationships</h2>
+                          <h2 class="box-slide-title">Colaboración</h2>
                       </div>    
                     </div>
                 </div>
@@ -281,13 +295,58 @@
                 <div class="container">
                     <div class="box-slider-content">
                       <div class="box-slider-text">
-                          <h2 class="box-slide-title">Performance</h2>
+                          <h2 class="box-slide-title">Ejecución</h2>
                       </div>    
                     </div>
                 </div>
               </div><!-- Item 1 end -->
           </div><!-- Page slider end-->          
-        
+          
+
+          <div class="col-lg-11">
+            <h3 class="column-title">Nuestros colaboradores</h3>
+            <p>
+              La unión hace la fuerza. La implantación de Inmotech en el Occidente Asturiano no sería posible sin la ayuda de nuestros colaboradores
+            </p>            
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="ts-service-box d-flex">
+                    <div class="ts-service-box-img">
+                      <img loading="lazy" src="images/colaboradores/ryr.jpg" style="width: 110px;" alt="service-icon">
+                    </div>
+                </div>
+                <!-- <div class="ts-service-box d-flex">
+                  <div class="ts-service-box-img">
+                    <img loading="lazy" src="images/colaboradores/natalia.jpg" style="width: 110px;" alt="service-icon">
+                  </div>
+                </div> -->
+              </div><!-- Col end -->
+
+              <div class="col-lg-4">
+                <div class="ts-service-box d-flex">
+                    <div class="ts-service-box-img">
+                      <img loading="lazy" src="images/colaboradores/natalia.jpg" style="width: 110px;" alt="service-icon">
+                    </div>
+                </div>
+                <!-- <div class="ts-service-box d-flex">
+                  <div class="ts-service-box-img">
+                    <img loading="lazy" src="images/colaboradores/natalia.jpg" style="width: 110px;" alt="service-icon">
+                  </div>
+                </div> -->
+              </div><!-- Col end -->
+      
+      
+              <div class="col-lg-4 mt-5 mt-lg-0 mb-4 mb-lg-0">
+                <div class="ts-service-box d-flex">
+                    <div class="ts-service-box-img">
+                      <img loading="lazy" src="images/colaboradores/fonso.jpg" alt="service-icon" style="width: 110px;">
+                    </div>
+                </div>
+      
+              </div><!-- Col end -->
+          </div><!-- Content row end -->
+  
+          </div>
 
         </div><!-- Col end -->
     </div><!-- Content row end -->
@@ -352,8 +411,8 @@
   <div class="container">
     <div class="row text-center">
         <div class="col-lg-12">
-          <h2 class="section-title">Quality Service</h2>
-          <h3 class="section-sub-title">Professional Team</h3>
+          <h2 class="section-title">Experiencia</h2>
+          <h3 class="section-sub-title">Equipo profesional</h3>
         </div>
     </div><!--/ Title row end -->
 
@@ -363,18 +422,18 @@
               <div class="item">
                 <div class="ts-team-wrapper">
                     <div class="team-img-wrapper">
-                      <img loading="lazy" class="w-100" src="images/team/team1.jpg" alt="team-img">
+                      <img loading="lazy" class="w-100" src="images/team/alejandro.jpg" alt="team-img">
                     </div>
                     <div class="ts-team-content">
-                      <h3 class="ts-name">Nats Stenman</h3>
-                      <p class="ts-designation">Chief Operating Officer</p>
-                      <p class="ts-description">Nats Stenman began his career in construction with boots on the ground</p>
-                      <div class="team-social-icons">
+                      <h3 class="ts-name">Alejandro</h3>
+                      <p class="ts-designation">Director</p>
+                      <p class="ts-description"></p>
+                      <!-- <div class="team-social-icons">
                           <a target="_blank" href="#"><i class="fab fa-facebook-f"></i></a>
                           <a target="_blank" href="#"><i class="fab fa-twitter"></i></a>
                           <a target="_blank" href="#"><i class="fab fa-google-plus"></i></a>
                           <a target="_blank" href="#"><i class="fab fa-linkedin"></i></a>
-                      </div><!--/ social-icons-->
+                      </div> -->
                     </div>
                 </div><!--/ Team wrapper end -->
               </div><!-- Team 1 end -->
@@ -382,17 +441,17 @@
               <div class="item">
                 <div class="ts-team-wrapper">
                     <div class="team-img-wrapper">
-                      <img loading="lazy" class="w-100" src="images/team/team2.jpg" alt="team-img">
+                      <img loading="lazy" class="w-100" src="images/team/jose.jpg" alt="team-img">
                     </div>
                     <div class="ts-team-content">
-                      <h3 class="ts-name">Angela Lyouer</h3>
-                      <p class="ts-designation">Innovation Officer</p>
-                      <p class="ts-description">Nats Stenman began his career in construction with boots on the ground</p>
-                      <div class="team-social-icons">
+                      <h3 class="ts-name">Jose</h3>
+                      <p class="ts-designation">Jefe de obra</p>
+                      <p class="ts-description"></p>
+                      <!-- <div class="team-social-icons">
                           <a target="_blank" href="#"><i class="fab fa-facebook-f"></i></a>
                           <a target="_blank" href="#"><i class="fab fa-twitter"></i></a>
                           <a target="_blank" href="#"><i class="fab fa-linkedin"></i></a>
-                      </div><!--/ social-icons-->
+                      </div> -->
                     </div>
                 </div><!--/ Team wrapper end -->
               </div><!-- Team 2 end -->
@@ -400,17 +459,17 @@
               <div class="item">
                 <div class="ts-team-wrapper">
                     <div class="team-img-wrapper">
-                      <img loading="lazy" class="w-100" src="images/team/team3.jpg" alt="team-img">
+                      <img loading="lazy" class="w-100" src="images/team/beto.jpg" alt="team-img">
                     </div>
                     <div class="ts-team-content">
-                      <h3 class="ts-name">Mark Conter</h3>
-                      <p class="ts-designation">Safety Officer</p>
-                      <p class="ts-description">Nats Stenman began his career in construction with boots on the ground</p>
-                      <div class="team-social-icons">
+                      <h3 class="ts-name">Beto</h3>
+                      <p class="ts-designation">Responsable de ejecución</p>
+                      <p class="ts-description"></p>
+                      <!-- <div class="team-social-icons">
                           <a target="_blank" href="#"><i class="fab fa-twitter"></i></a>
                           <a target="_blank" href="#"><i class="fab fa-google-plus"></i></a>
                           <a target="_blank" href="#"><i class="fab fa-linkedin"></i></a>
-                      </div><!--/ social-icons-->
+                      </div> -->
                     </div>
                 </div><!--/ Team wrapper end -->
               </div><!-- Team 3 end -->
@@ -418,23 +477,23 @@
               <div class="item">
                 <div class="ts-team-wrapper">
                     <div class="team-img-wrapper">
-                      <img loading="lazy" class="w-100" src="images/team/team4.jpg" alt="team-img">
+                      <img loading="lazy" class="w-100" src="images/team/willy.jpg" alt="team-img">
                     </div>
                     <div class="ts-team-content">
-                      <h3 class="ts-name">Ayesha Stewart</h3>
-                      <p class="ts-designation">Finance Officer</p>
-                      <p class="ts-description">Nats Stenman began his career in construction with boots on the ground</p>
-                      <div class="team-social-icons">
+                      <h3 class="ts-name">Willy</h3>
+                      <p class="ts-designation">Responsable de ejecución</p>
+                      <p class="ts-description"></p>
+                      <!-- <div class="team-social-icons">
                           <a target="_blank" href="#"><i class="fab fa-facebook-f"></i></a>
                           <a target="_blank" href="#"><i class="fab fa-twitter"></i></a>
                           <a target="_blank" href="#"><i class="fab fa-google-plus"></i></a>
                           <a target="_blank" href="#"><i class="fab fa-linkedin"></i></a>
-                      </div><!--/ social-icons-->
+                      </div> -->
                     </div>
                 </div><!--/ Team wrapper end -->
               </div><!-- Team 4 end -->
 
-              <div class="item">
+              <!-- <div class="item">
                 <div class="ts-team-wrapper">
                     <div class="team-img-wrapper">
                       <img loading="lazy" class="w-100" src="images/team/team5.jpg" alt="team-img">
@@ -447,10 +506,10 @@
                           <a target="_blank" href="#"><i class="fab fa-twitter"></i></a>
                           <a target="_blank" href="#"><i class="fab fa-google-plus"></i></a>
                           <a target="_blank" href="#"><i class="fab fa-linkedin"></i></a>
-                      </div><!--/ social-icons-->
+                      </div>
                     </div>
-                </div><!--/ Team wrapper end -->
-              </div><!-- Team 5 end -->
+                </div>
+              </div>
 
               <div class="item">
                 <div class="ts-team-wrapper">
@@ -466,10 +525,10 @@
                           <a target="_blank" href="#"><i class="fab fa-twitter"></i></a>
                           <a target="_blank" href="#"><i class="fab fa-google-plus"></i></a>
                           <a target="_blank" href="#"><i class="fab fa-linkedin"></i></a>
-                      </div><!--/ social-icons-->
+                      </div>
                     </div>
-                </div><!--/ Team wrapper end -->
-              </div><!-- Team 6 end -->
+                </div>
+              </div> -->
 
           </div><!-- Team slide end -->
         </div>
@@ -484,8 +543,7 @@
           <div class="col-lg-4 col-md-6 footer-widget footer-about">
             <h3 class="widget-title">La empresa</h3>
             <img loading="lazy" width="200px" class="footer-logo" src="images/footer-logo.png" alt="Constra">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci done idunt ut
-              labore et dolore magna aliqua.</p>
+            <p>La empresa de construcción y reformas del Occidente Asturiano.</p>
             <div class="footer-social">
               <ul>
                 <li><a href="https://facebook.com/themefisher" aria-label="Facebook"><i
@@ -512,9 +570,10 @@
           <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget">
             <h3 class="widget-title">Servicios</h3>
             <ul class="list-arrow">
-              <li><a href="service-single.html">Reformas y rehabiltación de viviendas</a></li>
-              <li><a href="service-single.html">Construcción general y obra nueva</a></li>
-              <li><a href="service-single.html">Servicios de arquitectura</a></li>
+              <li><a href="service-single.html">Construcción y reformas</a></li>
+              <li><a href="service-single.html">Diseñamos tu proyecto</a></li>
+              <li><a href="service-single.html">Tramitación de subvenciones</a></li>
+              <li><a href="service-single.html">Ahorro energético</a></li>
             </ul>
           </div><!-- Col end -->
         </div><!-- Row end -->
@@ -526,7 +585,7 @@
         <div class="row align-items-center">
           <div class="col-md-6">
             <div class="copyright-info">
-              <span> Propiedad de Inmotech Gestión de Activos S.L. <br>Calle Zaragoza 22 PISO PRIMERO- PUERTA 3 A. 28804, Alcala De Henares (Madrid). España</span>
+              <span> Propiedad de Inmotech Gestión de Activos S.L. <br>C/ Zaragoza 22, 1º-Puerta 3 A. 28804, Alcala De Henares (Madrid). España</span>
             </div>
           </div>
 

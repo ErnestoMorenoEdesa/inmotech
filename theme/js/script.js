@@ -79,8 +79,25 @@ jQuery(function ($) {
 		scrollTopBtn();
 	});
 
+	$(window).resize(function(){
+		adjustSizeHeader();
+	  });
+
+	function adjustSizeHeader () {
+		if($(window).width() < 995) {
+			$(".top-info-box").hide();
+			$("#infoBoxMenu").show();
+
+		}else {
+			$(".top-info-box").show();
+			$("#infoBoxMenu").hide();
+		}
+	} 
 
 	$(document).ready(function () {
+
+		console.log("ScreenSize: Alto" + $(window).height() + " Ancho" + $(window).width());
+		adjustSizeHeader();
 
 		// navSearch show/hide
 		function navSearch() {
@@ -175,13 +192,22 @@ jQuery(function ($) {
 
 		// Shuffle js filter and masonry
 		function projectShuffle() {
+			const urlParams = new URLSearchParams(window.location.search);
+			const myParam = urlParams.get('projecttype');
+
+			
+
 			if ($('.shuffle-wrapper').length !== 0) {
 				var Shuffle = window.Shuffle;
+				
 				var myShuffle = new Shuffle(document.querySelector('.shuffle-wrapper'), {
 					itemSelector: '.shuffle-item',
 					sizer: '.shuffle-sizer',
 					buffer: 1
 				});
+
+				
+
 				$('input[name="shuffle-filter"]').on('change', function (evt) {
 					var input = evt.currentTarget;
 					if (input.checked) {
@@ -192,6 +218,10 @@ jQuery(function ($) {
 					$('.shuffle-btn-group label').removeClass('active');
 					$(this).addClass('active');
 				});
+
+				if(myParam != null) {
+					$('input[name="shuffle-filter"').filter(function(){return $(this).prop('id') == myParam}).trigger("click")
+				}
 			}
 		}
 		projectShuffle();

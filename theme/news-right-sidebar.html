@@ -72,7 +72,7 @@
     <div class="container">
       <div class="logo-area">
           <div class="row align-items-center">
-            <div class="logo col-lg-3 text-center text-lg-left mb-3 mb-md-5 mb-lg-0">
+            <div class="logo col-lg-3 text-center text-lg-left">
                 <a class="d-block" href="index.html" style="width: 350px;">
                   <img loading="lazy" src="images/logo.png" alt="Inmotech">
                 </a>
@@ -101,7 +101,7 @@
                     <a class="btn btn-primary" href="contact.html">Pide presupuesto</a>
                   </li>
                 </ul><!-- Ul end -->
-            </div><!-- header right end -->
+            </div>
           </div><!-- logo area end -->
   
       </div><!-- Row end -->
@@ -116,7 +116,13 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                
+                <div class="top-social" >
+                  <ul id="infoBoxMenu" >
+                    <li class="header-get-a-quote" style="margin-top: -5px;">
+                      <a class="btn btn-primary" href="contact.html">Contacto</a>
+                    </li>
+                  </ul>
+                </div>
                 <div id="navbar-collapse" class="collapse navbar-collapse">
                     <ul class="nav navbar-nav mr-auto">
                       <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
@@ -133,18 +139,20 @@
                       <li class="nav-item dropdown">
                           <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Proyectos <i class="fa fa-angle-down"></i></a>
                           <ul class="dropdown-menu" role="menu">
-                            <li><a href="projects.html">Construcción y obra nueva</a></li>
-                            <li><a href="projects.html">Reformas y rehabilitación</a></li>
-                            <li><a href="projects-single.html">Obra pública</a></li>
-                            <li><a >Otros</a></li>
+                            <li><a href="projects.html?projecttype=obranueva">Construcción y obra nueva</a></li>
+                            <li><a href="projects.html?projecttype=rehabilitacion">Reformas y rehabilitación</a></li>
+                            <li><a href="projects.html?projecttype=interiores">Interiores</a></li>
+                            <li><a href="projects.html?projecttype=obrapublica">Obra pública</a></li>
+                            <li><a href="projects.html?projecttype=otros">Otros</a></li>
                           </ul>
                       </li>
               
                       <li class="nav-item dropdown">
                           <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Servicios <i class="fa fa-angle-down"></i></a>
                           <ul class="dropdown-menu" role="menu">
-                            <li><a href="services.html">Tramitación de subvenciones</a></li>
-                            <li><a href="services.html">Arquitectos y aparejadores</a></li>
+                            <li><a href="service-single.html">Construcción y reformas</a></li>
+                            <li><a href="service-single.html">Diseñamos tu proyecto</a></li>
+                            <li><a href="service-single.html">Tramitación de subvenciones</a></li>
                             <li><a href="service-single.html">Ahorro energético</a></li>
                           </ul>
                       </li>
@@ -170,7 +178,7 @@
                         <ul class="dropdown-menu" role="menu">
                           <li><a href="about.html">La empresa</a></li>
                           <!-- <li><a href="team.html">Profesionales</a></li> -->
-                          <li><a href="testimonials.html">Trabaja con nosotros</a></li>
+                          <li><a href="workwithus.html">Trabaja con nosotros</a></li>
                         </ul>
                     </li>
               
@@ -186,8 +194,8 @@
                       <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
                     </ul>
                 </div>
-
-                <div class="col-lg-4 col-md-4 top-social text-center text-md-right" style="width: 190px;">
+                
+                <!-- <div class="col-lg-4 col-md-4 top-social text-center text-md-right" style="width: 190px;">
                   <ul class="list-unstyled">
                       <li>
                         <a title="Facebook" href="https://facebbok.com/themefisher.com">
@@ -204,7 +212,7 @@
                         </a>
                       </li>
                   </ul>
-                </div>
+                </div> -->
               </nav>
           </div>
           <!--/ Col end -->
@@ -470,8 +478,7 @@
           <div class="col-lg-4 col-md-6 footer-widget footer-about">
             <h3 class="widget-title">La empresa</h3>
             <img loading="lazy" width="200px" class="footer-logo" src="images/footer-logo.png" alt="Constra">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci done idunt ut
-              labore et dolore magna aliqua.</p>
+            <p>La empresa de construcción y reformas del Occidente Asturiano.</p>
             <div class="footer-social">
               <ul>
                 <li><a href="https://facebook.com/themefisher" aria-label="Facebook"><i
@@ -498,9 +505,10 @@
           <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget">
             <h3 class="widget-title">Servicios</h3>
             <ul class="list-arrow">
-              <li><a href="service-single.html">Reformas y rehabiltación de viviendas</a></li>
-              <li><a href="service-single.html">Construcción general y obra nueva</a></li>
-              <li><a href="service-single.html">Servicios de arquitectura</a></li>
+              <li><a href="service-single.html">Construcción y reformas</a></li>
+              <li><a href="service-single.html">Diseñamos tu proyecto</a></li>
+              <li><a href="service-single.html">Tramitación de subvenciones</a></li>
+              <li><a href="service-single.html">Ahorro energético</a></li>
             </ul>
           </div><!-- Col end -->
         </div><!-- Row end -->
@@ -512,7 +520,7 @@
         <div class="row align-items-center">
           <div class="col-md-6">
             <div class="copyright-info">
-              <span> Propiedad de Inmotech Gestión de Activos S.L. <br>Calle Zaragoza 22 PISO PRIMERO- PUERTA 3 A. 28804, Alcala De Henares (Madrid). España</span>
+              <span> Propiedad de Inmotech Gestión de Activos S.L. <br>C/ Zaragoza 22, 1º-Puerta 3 A. 28804, Alcala De Henares (Madrid). España</span>
             </div>
           </div>
 
