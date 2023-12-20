@@ -195,8 +195,6 @@ jQuery(function ($) {
 			const urlParams = new URLSearchParams(window.location.search);
 			const myParam = urlParams.get('projecttype');
 
-			
-
 			if ($('.shuffle-wrapper').length !== 0) {
 				var Shuffle = window.Shuffle;
 				
