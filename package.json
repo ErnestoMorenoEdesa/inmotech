@@ -1,8 +1,8 @@
 {
-  "name": "constra",
+  "name": "Inmotech",
   "version": "2.1.0",
-  "description": "constra free construction template",
-  "author": "Themefisher",
+  "description": "Inmotech - Construcción y reformas",
+  "author": "Ernesto moreno",
   "license": "MIT",
   "scripts": {
     "dev": "gulp",
