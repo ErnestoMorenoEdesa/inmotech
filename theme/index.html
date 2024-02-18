@@ -776,33 +776,37 @@
 
               <div class="col-md-7 newsletter-form">
                 
-                <form action="#" method="post">
-                    <table>
+                <form id="contact-form" action="https://formspree.io/f/mwkddbpe" method="post" role="form">
+                  <div class="error-container"></div>  
+                  <table>
                       <tr>
                         <td>
                           <div class="form-group">
                             <label for="newsletter-email" class="content-hidden">email colaboradores</label>
-                            <input type="email" name="email" id="newsletter-email" class="form-control form-control-lg" placeholder="Introduce tu email" autocomplete="off">
-      
-                            <select name="ambito" class="form-control form-control-lg custom-select" >
-                              <option value="">Selecciona tipo de colaboración</option>
-                              <option value="1">Proveedor materiales de construcción</option>
-                              <option value="2">Profesional de construcción autónomo</option>
-                              <option value="3">Arquitecto / Aparejador</option>
-                              <option value="4">Servicios tramitación de subvenciones</option>
-                              <option value="5">Interiorismo / Paisajismo</option>
-                              <option value="6">Otros oficios</option>
+                            <input type="email" required name="email" id="newsletter-email" class="form-control form-control-lg" placeholder="Introduce tu email" autocomplete="off">
+                            <input type="hidden" name="body" id="newsletter-boy" value="Solicitud de colaboracion" >
+                            
+                            <select name="ambito" required class="form-control form-control-lg custom-select" >
+                              <option value="No especificado">Selecciona tipo de colaboración</option>
+                              <option value="Proveedor materiales de construcción">Proveedor materiales de construcción</option>
+                              <option value="Profesional de construcción autónomo">Profesional de construcción autónomo</option>
+                              <option value="Arquitecto / Aparejador">Arquitecto / Aparejador</option>
+                              <option value="Servicios tramitación de subvenciones">Servicios tramitación de subvenciones</option>
+                              <option value="Interiorismo / Paisajismo">Interiorismo / Paisajismo</option>
+                              <option value="Otros oficios">Otros oficios</option>
                             </select>
       
                             
                           </div>
                         </td>
                         <td>
-
+                          <div class="text-right"><br>
+                            <button class="btn btn-primary solid blank" type="submit">Enviar</button>
+                          </div>
                         
-                              <div style="padding: 5px;">
+                              <!-- <div style="padding: 5px;">
                                 <a class="btn btn-primary" href="projects.html">Enviar</a>
-                              </div>
+                              </div> -->
                            
                         </td>
                       </tr>
